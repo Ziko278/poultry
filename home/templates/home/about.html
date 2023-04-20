@@ -1,0 +1,103 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+{% block 'main' %}
+
+        <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">10</h1>
+                                <small class="fs-5 fw-bold">Years Experience</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="{% static 'home/img/car1.jpeg' %}">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="{% static 'home/img/car2.jpeg' %}">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="{% static 'home/img/car3.jpeg' %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3">About {{site_info.name}}</p>
+                    <h1 class="mb-4">Best Poultry Farm in Nigeria</h1>
+                    <p class="mb-4" style="text-align:justify">Welcome to {{site_info.name}}! we take pride in providing
+                        high-quality poultry products that are healthy, nutritious, and delicious. Our products include
+                    live chicken, eggs, fowl feeds, fowl dungs.</p>
+                    <p class="mb-4"  style="text-align:justify">
+                    Our team consists of experienced and passionate farmers who work tirelessly to ensure that every
+                    bird in our care receives the best possible treatment. From providing them with clean and spacious
+                    living areas to offering them a balanced and nutritious diet,
+                    we go above and beyond to make sure that our birds are thriving
+                    </p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/service.png" alt="">
+                            <h5 class="mb-3">Dedicated Services</h5>
+                            <p style="text-align:justify">What sets us apart from other poultry farms is our unwavering commitment to animal
+                                welfare and sustainable farming practices. We believe that happy and healthy birds produce
+                                the best quality meat and eggs,
+                                which is why we prioritize their wellbeing above all else.</p>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <h5 class="mb-3">Quality Products</h5>
+                            <p style="text-align:justify">We produce and sell quality poultry farm products. Healthy
+                            chickens and eggs, well processed fowl dungs, and healthy animal feeds.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/banner.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="{% static 'home/img/car1.jpeg' %}" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-whie mb-3">Best Poultry Services</h2>
+                            <p class="text-whit mb-4" style="text-align:justify">For many years now, we have been delivering quality agricultural
+                            and poultry services to small, medium and even large scaled clients. We always put our
+                                customers before anything else, and our level of service is always top notch.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="{% static 'home/img/car2.jpeg' %}" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-whit mb-3">We Deliver Nationwide</h2>
+                            <p class="text-whie mb-4" style="text-align:justify">With years of poultry services, our
+                            client base has greatly increased, spanning all over the country. We also have not relented,
+                            we deliver to every nook and cranny in the country, very fast, without any sacrifice of the
+                            desired quality.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+{%endblock %}

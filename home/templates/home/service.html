@@ -1,0 +1,126 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+{% block 'main' %}
+  <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
+                <h1 class="mb-5">Services That We Offer</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{% static 'home/img/car3.jpeg' %}"  alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="{% static 'home/img/car3.jpeg' %}" style="width:100%;height:100%"  alt="">
+                            </div>
+                            <h4 class="mb-3">Animal Feed Supply</h4>
+                            <p class="mb-4" style="text-align:justify">Animal feeds are essential for the health and
+                                well-being of livestock and other animals. We supply all types of poultry feeds and supplements
+                                that animals need to maintain good health, grow, and produce meat, milk, or eggs.
+                                We supply hay, silage, grains, vitamin and mineral supplements. we supply the feed based on
+                                the animal's age, weight, and nutritional needs, as well as the intended use of the animal.</p>
+                            <a class="btn btn-square rounded-circle" href="{% url 'service' %}"><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{% static 'home/img/breeding1.jpeg' %}" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle"  src="{% static 'home/img/breeding1.jpeg' %}" style="width:100%;height:100%" alt="">
+                            </div>
+                            <h5 class="mb-3">Live Chicken Supply</h5>
+                            <p class="mb-4" style="text-align:justify">Breeding and veterinary care are both essential components of animal husbandry, whether for livestock or pets.
+                                Breeding involves selecting and mating animals with desirable traits in order
+                                to improve the quality of the offspring. This can involve careful consideration of factors such as genetics, health, and temperament. Breeding can be used to produce animals with improved productivity, disease resistance, and other desirable traits.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{% static 'home/img/brown-eggs.jpg' %}"  style="width:100%;height:100%" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="{% static 'home/img/brown-eggs.jpg' %}" alt="">
+                            </div>
+                            <h5 class="mb-3">Egg Supply</h5>
+                            <p class="mb-4" style="text-align:justify">We are proud to say that we are one of the leading suppliers of eggs in the country.
+                            All our eggs are healthy, big, nutritious and delicious. Prices are also very affordable compared
+                            to other suppliers.<br />
+                            Our broilers are well feed with the required suppliment to enable them produce quality and
+                            healthy eggs.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
+                    <h1 class="mb-4">Why People are Choosing Oba Farm!</h1>
+                    <p class="mb-4">We have numerous customers all over the country and there is no suprise why.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>We deliver quality Products</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>We deliver on time</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>We are always here to assist you</p>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/experience.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">10</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Years Experience</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/award.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">1000</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Happy Clients</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/animal.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">10000</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Chicken</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/client.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">24</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Hour support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+{%endblock %}

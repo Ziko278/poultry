@@ -1,0 +1,38 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+{% block 'main' %}
+<!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Gallery</p>
+                <h1 class="mb-5">Some Images from our Poultry</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact End -->
+
+<!-- Gallery Start -->
+
+    <div class="container-xxl py-5 px-0">
+        <div class="row g-0">
+            {% for gallery in gallery_list %}
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+
+                    <div class="col-12">
+                        <a class="d-block" href="/media/{{ gallery.image }}" data-lightbox="gallery">
+                            <img class="img-fluid" src="/media/{{ gallery.image }}" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+{%endblock %}

@@ -1,0 +1,55 @@
+{% extends 'admin_dashboard/layout.html' %}
+{% load static %}
+{% block 'main' %}
+<form>
+    <div class="col-12">
+        <div class="card recent-sales overflow-auto">
+            <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                        <h6>Action</h6>
+                    </li>
+
+                    <li class="dropdown-item"><a class="btn btn-primary" style="width:100%" href="{% url 'gallery_create' %}">Upload Image</a></li>
+                </ul>
+            </div>
+
+            <div class="card-body">
+                    <h5 class="card-title">Uploaded Images</h5>
+                <table class="table table-borderless datatable">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" style="min-width:120px">Image</th>
+                        <th scope="col" class="text-center">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% if gallery_list %}
+                    {% for gallery in gallery_list %}
+
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td><img src="/media/{{ gallery.image }}" style="width:150px;height:80px;border-radius:5px;" /> </td>
+                            <td class="text-center">
+								<a class="btn btn-danger" href="{% url 'gallery_delete' gallery.id %}">Delete</a>
+							</td>
+                        </tr>
+
+                    {% endfor %}
+                    {% else %}
+                        <tr><td colspan="5"><h3 class="text-center">No Image Uploaded Yet</h3></td></tr>
+                    {% endif %}
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</form>
+
+
+{%endblock %}
+
